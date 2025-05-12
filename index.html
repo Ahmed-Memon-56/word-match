@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word match</title>
+</head>
+
+<body>
+    <script>
+        let para = "Social media is a digital platform that has transformed the way people communicate and share information. Popular platforms like Facebook, Instagram, Twitter, and LinkedIn have made the world a smaller place, enabling instant connections across the globe. Social media has immense benefits, particularly for students."
+        let userInput = prompt('Enter the word you want!')
+        let count = 0;
+        for (i = 0; i < para.length; i++) {
+            if (userInput == para.slice(i, i + userInput.length)) {
+                count++
+   console.log("word found")
+            }
+        
+        }
+    </script>
+</body>
+
+</html>
